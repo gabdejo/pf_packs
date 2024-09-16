@@ -1,0 +1,24 @@
+adjust.date             Adjusts the given dates to the next/previous
+                        business day
+bizdays                 Computes business days between two dates.
+bizdays-package         Business Days Calculations and Utilities
+bizdays.options         bizdays' options
+bizdayse                Business days and current days equivalence
+bizdiff                 Compute the amount of business days between
+                        dates
+bizseq                  Create a sequence of business days
+calendar-holidays-weekdays
+                        Calendar's holidays and weekdays
+calendar-import-export
+                        Import and export calendars
+calendar-register       Calendars register
+create.calendar         Creates calendars
+getbizdays              Obtaining business days using other dates (or
+                        month or year) as reference
+getdate                 Obtaining dates using other dates (or month or
+                        year) as reference
+is.bizday               Checks if the given dates are business days.
+load_builtin_calendars
+                        Load builtin calendars
+offset                  Offsets the given 'dates' by 'n' business days
+other-calendars         Calendars from other packages

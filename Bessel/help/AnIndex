@@ -1,0 +1,17 @@
+Airy	Airy
+AiryA	Airy
+AiryB	Airy
+BesselH	Hankel
+BesselI	Bessel
+besselI.ftrms	besselIasym
+besselI.nuAsym	besselI.nuAsym
+besselIasym	besselIasym
+besselIs	besselIs
+BesselJ	Bessel
+besselJs	besselJs
+BesselK	Bessel
+besselK.nuAsym	besselI.nuAsym
+besselKasym	besselIasym
+BesselY	Bessel
+bI	besselIs
+Hankel	Hankel

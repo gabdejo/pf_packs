@@ -1,0 +1,13 @@
+Airy                    Airy Functions (and Their First Derivative)
+BesselH                 Hankel (H-Bessel) Function (of Complex
+                        Argument)
+BesselI                 Bessel Functions of Complex Arguments I(), J(),
+                        K(), and Y()
+bI                      Bessel I() function Simple Series
+                        Representation
+besselI.nuAsym          Asymptotic Expansion of Bessel I(x,nu) and
+                        K(x,nu) for Large nu (and x)
+besselIasym             Asymptotic Expansion of Bessel I(x,nu) and
+                        K(x,nu) For Large x
+besselJs                Bessel J() function Simple Series
+                        Representation

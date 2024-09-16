@@ -1,0 +1,31 @@
+useDynLib(Bessel, .registration=TRUE)
+
+importMethodsFrom("methods", coerce)# for as(..) / setAs(.)
+importFrom("methods", as, is, slot)
+
+importMethodsFrom("Rmpfr", asNumeric, apply, colSums, rowSums)
+importFrom("Rmpfr", mpfr, .getPrec, Const)
+
+## These are the  TOMS 644  R-interface functions :
+
+export(BesselI,
+       BesselJ,
+       BesselK,
+       BesselY)
+
+export(BesselH,
+       AiryA, AiryB)
+
+## -------------------------------
+
+export(besselIs,
+       bI, ## <-  deprecated on 2014-12-13
+       besselIasym,
+       besselI.ftrms,
+       besselI.nuAsym,
+
+       besselJs,
+
+       besselKasym,
+       besselK.nuAsym)
+

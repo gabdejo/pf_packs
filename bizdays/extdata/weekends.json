@@ -1,0 +1,10 @@
+{
+  "name": "weekends",
+  "weekdays": [
+    "saturday",
+    "sunday"
+  ],
+  "financial": true,
+  "adjust.from": "following",
+  "adjust.to": "preceding"
+}
