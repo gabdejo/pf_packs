@@ -1,0 +1,19 @@
+roll-package            Rolling and Expanding Statistics
+roll_all                Rolling All
+roll_any                Rolling Any
+roll_cor                Rolling Correlations
+roll_cov                Rolling Covariances
+roll_crossprod          Rolling Crossproducts
+roll_idxmax             Rolling Index of Maximums
+roll_idxmin             Rolling Index of Minimums
+roll_lm                 Rolling Linear Models
+roll_max                Rolling Maximums
+roll_mean               Rolling Means
+roll_median             Rolling Medians
+roll_min                Rolling Minimums
+roll_prod               Rolling Products
+roll_quantile           Rolling Quantiles
+roll_scale              Rolling Scaling and Centering
+roll_sd                 Rolling Standard Deviations
+roll_sum                Rolling Sums
+roll_var                Rolling Variances

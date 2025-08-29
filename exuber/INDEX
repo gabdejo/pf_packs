@@ -1,0 +1,33 @@
+autoplot.ds_radf        Plotting a 'ds_radf' object
+autoplot.radf_distr     Plotting a 'radf_distr' object
+autoplot.radf_obj       Plotting 'radf' models
+datestamp               Date-stamping periods of mildly explosive
+                        behavior
+diagnostics             Diagnostics on hypothesis testing
+index-rd                Retrieve/Replace the index
+install_exuberdata      Install 'exuberdata' Package
+ps_tb                   Helper function to find 'tb' from the Phillips
+                        and Shi (2020)
+psy_minw                Helper functions in accordance to PSY(2015)
+radf                    Recursive Augmented Dickey-Fuller Test
+radf_crit               Stored Monte Carlo Critical Values
+radf_mc_cv              Monte Carlo Critical Values
+radf_sb_cv              Panel Sieve Bootstrap Critical Values
+radf_wb_cv              Wild Bootstrap Critical Values
+radf_wb_cv2             Wild Bootstrap Critical Values
+scale_exuber_manual     Exuber scale and theme functions
+series_names            Retrieve/Replace series names
+sim_blan                Simulation of a Blanchard (1979) bubble process
+sim_div                 Simulation of dividends
+sim_evans               Simulation of an Evans (1991) bubble process
+sim_ps1                 Simulation of a single-bubble process with
+                        multiple forms of collapse regime
+sim_psy1                Simulation of a single-bubble process
+sim_psy2                Simulation of a two-bubble process
+summary.radf_obj        Summarizing 'radf' models
+tidy.ds_radf            Tidy a 'ds_radf' object
+tidy.radf_cv            Tidy a 'radf_cv' object
+tidy.radf_distr         Tidy a 'radf_distr' object
+tidy.radf_obj           Tidy a 'radf_obj' object
+tidy_join               Tidy into a joint model
+tidy_join.radf_obj      Tidy into a joint model
