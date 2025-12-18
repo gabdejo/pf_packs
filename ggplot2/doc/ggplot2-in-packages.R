@@ -1,7 +1,6 @@
-## -----------------------------------------------------------------------------
-#| include: false
+## ----include = FALSE----------------------------------------------------------
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.show = "hide")
 library(ggplot2)
-
 
 ## -----------------------------------------------------------------------------
 mpg_drv_summary <- function() {
@@ -10,12 +9,9 @@ mpg_drv_summary <- function() {
     ggplot2::coord_flip()
 }
 
-
-## -----------------------------------------------------------------------------
-#| include: false
+## ----include=FALSE------------------------------------------------------------
 # make sure this function runs!
 mpg_drv_summary()
-
 
 ## -----------------------------------------------------------------------------
 #' @importFrom ggplot2 ggplot aes geom_bar coord_flip
@@ -25,12 +21,9 @@ mpg_drv_summary <- function() {
     coord_flip()
 }
 
-
-## -----------------------------------------------------------------------------
-#| include: false
+## ----include=FALSE------------------------------------------------------------
 # make sure this function runs!
 mpg_drv_summary()
-
 
 ## -----------------------------------------------------------------------------
 mpg_drv_summary <- function() {
@@ -39,14 +32,12 @@ mpg_drv_summary <- function() {
     facet_wrap(vars(year))
 }
 
-
 ## -----------------------------------------------------------------------------
 mpg_drv_summary <- function() {
   ggplot(ggplot2::mpg) + 
     geom_bar(aes(y = .data$drv)) +
     facet_wrap(vars(.data$year))
 }
-
 
 ## -----------------------------------------------------------------------------
 col_summary <- function(df, col, by) {
@@ -57,9 +48,7 @@ col_summary <- function(df, col, by) {
 
 col_summary(mpg, "drv", "year")
 
-
-## -----------------------------------------------------------------------------
-#| eval: !expr (packageVersion("rlang") >= "0.3.4.9003")
+## ----eval = (packageVersion("rlang") >= "0.3.4.9003")-------------------------
 col_summary <- function(df, col, by) {
   ggplot(df) + 
     geom_bar(aes(y = {{ col }})) + 
@@ -67,7 +56,6 @@ col_summary <- function(df, col, by) {
 }
 
 col_summary(mpg, drv, year)
-
 
 ## -----------------------------------------------------------------------------
 mpg_drv_dist <- structure(
@@ -79,7 +67,6 @@ mpg_drv_dist <- structure(
   class = "discrete_distr"
 )
 
-
 ## -----------------------------------------------------------------------------
 discrete_distr_data <- function(x) {
   tibble::tibble(
@@ -89,7 +76,6 @@ discrete_distr_data <- function(x) {
 }
 
 discrete_distr_data(mpg_drv_dist)
-
 
 ## -----------------------------------------------------------------------------
 #' @importFrom ggplot2 autoplot
@@ -101,13 +87,11 @@ autoplot.discrete_distr <- function(object, ...) {
     labs(x = "Value", y = "Probability")
 }
 
-
 ## -----------------------------------------------------------------------------
 #' @importFrom graphics plot
 plot.discrete_distr <- function(x, ...) {
   print(autoplot(x, ...))
 }
-
 
 ## -----------------------------------------------------------------------------
 #' @importFrom ggplot2 %+replace%
@@ -122,12 +106,14 @@ theme_custom <- function(...) {
 
 mpg_drv_summary() + theme_custom()
 
-
 ## -----------------------------------------------------------------------------
-mpg_drv_summary2 <- function() {
-  mpg_drv_summary() + theme_custom()
+default_theme <- function() {
+  theme_custom()
 }
 
+mpg_drv_summary2 <- function() {
+  mpg_drv_summary() + default_theme()
+}
 
 ## -----------------------------------------------------------------------------
 theme_custom <- function(...) {
@@ -137,15 +123,11 @@ theme_custom <- function(...) {
     ggplot2::theme(panel.background = ggplot2::element_blank())
 }
 
-
-## -----------------------------------------------------------------------------
-#| include: false
+## ----include=FALSE------------------------------------------------------------
 # make sure this function runs!
 mpg_drv_summary() + theme_custom()
 
-
-## -----------------------------------------------------------------------------
-#| eval: false
+## ----eval=FALSE---------------------------------------------------------------
 # .onLoad <- function(...) {
 #   if (requireNamespace("ggplot2", quietly = TRUE)) {
 #     vctrs::s3_register("ggplot2::autoplot", "discrete_distr")
